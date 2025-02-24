@@ -58,14 +58,17 @@ header{
     font-weight: 800;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    text-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color);
 }
 .logo:hover{
     transform: scale(1.1);
     color: var(--main-color);
+    text-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color);
 }
 span{
     color : var(--main-color);
+}
+.logo:hover span{
+    color: var(--text-color);
 }
 
 .navbar{
@@ -190,11 +193,16 @@ span{
 /* Services Section Code */
 .services{
     background: var(--secondary-bg-color);
+    text-align: center;
 }
 .heading{
-    text-align: center;
+    display: inline-block;
     font-size: 6.5rem;
     margin-bottom: 3rem;
+    transition: 0.3s ease-in-out;
+}
+.heading:hover{
+    transform: scale(1.1);
     text-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color);
 }
 .services-content{
@@ -234,6 +242,7 @@ span{
 /* Pricing Section */
 .plans{
     background: var(--bg-color);
+    text-align: center;
 }
 .plans-content{
     display: grid;
@@ -244,11 +253,12 @@ span{
     padding: 0;
 }
 .plans-content .heading{
+    display: inline-block;
     color: var(--main-color);
     padding: 2rem;
     text-align: center;
     font-size: 6rem;
-    text-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color);
+    transition: 0.3s ease-in-out;
 }
 .box{
     padding: 30px 30px 50px 30px;
