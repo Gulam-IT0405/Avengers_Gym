@@ -59,11 +59,6 @@ header{
     cursor: pointer;
     transition: 0.3s ease-in-out;
     text-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color);
-    animation: glow 1.5s infinite alternate;
-}
-@keyframes glow{
-    0% { text-shadow: 0 0 10px var(--main-color);}
-    100% { text-shadow: 0 0 20px var(--main-color), 0 0 30px var(--main-color);}
 }
 .logo:hover{
     transform: scale(1.1);
@@ -201,11 +196,6 @@ span{
     font-size: 6.5rem;
     margin-bottom: 3rem;
     text-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color);
-    animation: glow 1.5s infinite alternate;
-}
-@keyframes glow{
-    0% { text-shadow: 0 0 10px var(--main-color);}
-    100% { text-shadow: 0 0 20px var(--main-color), 0 0 30px var(--main-color);}
 }
 .services-content{
     display: grid;
@@ -259,11 +249,6 @@ span{
     text-align: center;
     font-size: 6rem;
     text-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color);
-    animation: glow 1.5s infinite alternate;
-}
-@keyframes glow{
-    0% { text-shadow: 0 0 10px var(--main-color);}
-    100% { text-shadow: 0 0 20px var(--main-color), 0 0 30px var(--main-color);}
 }
 .box{
     padding: 30px 30px 50px 30px;
@@ -345,11 +330,6 @@ span{
     text-align: center;
     font-size: 6rem;
     text-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color);
-    animation: glow 1.5s infinite alternate;
-}
-@keyframes glow{
-    0% { text-shadow: 0 0 10px var(--main-color);}
-    100% { text-shadow: 0 0 20px var(--main-color), 0 0 30px var(--main-color);}
 }
 .about-content h2{
     text-align: left;
@@ -403,14 +383,9 @@ span{
 }
 .contact-content .heading:hover{
     text-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color);
-    animation: glow 1.5s infinite alternate;
 }
 .contact-content .heading span {
     color: var(--main-color);
-}
-@keyframes glow{
-    0% { text-shadow: 0 0 10px var(--main-color);}
-    100% { text-shadow: 0 0 20px var(--main-color), 0 0 30px var(--main-color);}
 }
 .contact-info {
     font-size: 2rem;
