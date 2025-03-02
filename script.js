@@ -1,14 +1,18 @@
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
-menu.onclick = () => {
-    menu.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-}
-window.onscroll = () => {
-    menu.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-}
+menu.onclick = (event) => {
+        menu.classList.toggle('bx-x');
+        navbar.classList.toggle('active');
+        event.stopPropagation();
+};
+
+document.addEventListener("click", (event) => {
+    if (!menu.contains(event.target) && !navbar.contains(event.target)){
+        menu.classList.remove('bx-x');
+        navbar.classList.remove('active');
+    }
+});
 
 const typed = new Typed('.multiple-text', {
     strings: ['Physical Fitness', 'Weight Gain/Loss','Strength Training','Muscle Building'
@@ -19,5 +23,3 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true,
   });
-
-  

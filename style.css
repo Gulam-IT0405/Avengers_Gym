@@ -110,7 +110,8 @@ span{
 
 #menu-icon{
     font-size: 3.6rem;
-    color: var(--main-color);
+    background: rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(20px);
     cursor: pointer;
     display: none;
 }
@@ -398,24 +399,14 @@ span{
     color: var(--main-color);
 }
 .contact-info {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
     margin-top: 2rem;
 }
 .contact-info i {
     color: var(--text-color);
     margin-right: 10px;
-    font-size: 3rem;
-}
-.contact-info p {
-    margin: 1rem 0;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1s forwards ease-out;
-}
-@keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
+    font-size: 2.5rem;
 }
 .contact-info a{
     color: #32e0c4;
@@ -512,18 +503,6 @@ span{
     transform: scale(1.05);
 }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .join-us h2 {
-      font-size: 30px;
-    }
-  
-    .registration-form {
-      width: 90%;
-    }
-  }
-
-  
 /* Footer Section */
 .footer{
     position: relative;
@@ -565,7 +544,7 @@ span{
 
 /* Scroll-Bar Design */
 ::-webkit-scrollbar {
-    width: 8px; /* Sleek scrollbar width */
+    width: 0.5rem; /* Sleek scrollbar width */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -658,6 +637,9 @@ span{
         width: 70vw;
         margin-top: 4rem; 
     }
+    #menu-icon{
+        display: block;
+    }
     .about{
         flex-direction: column;
     }
@@ -674,58 +656,86 @@ span{
     .services h2{
         margin-bottom: 3rem;
     }
+    .join-us h2 {
+      font-size: 30px;
+    }
+    .registration-form {
+      width: 90%;
+    }
 }
 @media (max-width:617px){
+    .home{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-content{
+        justify-content: center;
+        align-items: center;
+    }
+    .home-content h3{
+        font-size: 4rem;
+        margin-top: 1.5rem;
+    }
+    .home-content h1{
+        font-size: 4.5rem;
+        margin-top: 1.5rem;
+    }
+    .home-content{
+        order: 2;
+    }
     .home-img img{
-        width: 80vw;
-        margin-top: 4rem;
+        width: 65vw;
+        margin-top: 3rem; 
+        top: 55%;
+        right: 0;
+    }
+    .home-img::before{
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #menu-icon{
+        display: block;
+    }
+    .about{
+        flex-direction: column;
     }
     .about-img img{
         width: 70vw;
         margin-top: 4rem;
+    }
+    .about-content{
+        text-align: center;
+    }
+    .about-content h2{
+        text-align: center;
+    }
+    .services h2{
+        margin-bottom: 3rem;
+    }
+    
+    .contact-content{
+        height: 55rem;
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 5rem;
+    }
+    .footer{
+        padding: 40px 0;
+    }
+    .join-us h2 {
+      font-size: 30px;
+    }
+    .registration-form {
+      width: 90%;
     }
 }
 @media (max-width:450px){
     html{
         font-size: 50%;
     }
+    #menu-icon{
+        display: block;
+    }
 }
-/* @media (max-width: 786px) {
-    html {
-        font-size: 55%;
-    }
-    body{
-        font-size: 50%;
-    }
-    header {
-        padding: 2rem 5%;
-    }
-    .home{
-        flex-direction: column;
-    }
-    .navbar a {
-        margin-left: 2rem;
-        font-size: 1.6rem;
-    }
-    .home-content h1 {
-        font-size: 5rem;
-        margin-top: 1.5rem;
-    }
-    .home-content h3{
-        font-size: 4.5rem;
-        margin-top: 1.5rem;   
-    }
-    .home-img img{
-        width: 70vw;
-        right: 5%;
-    }
-    .home-img::before {
-        font-size: 8rem;
-    }
-    .contact-content .heading {
-        font-size: 4rem;
-    }
-    .contact-info {
-        font-size: 1.8rem;
-    }
-} */
