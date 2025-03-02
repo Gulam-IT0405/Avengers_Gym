@@ -340,7 +340,17 @@ span{
     color: var(--main-color);
     text-align: center;
     font-size: 6rem;
-    text-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color);
+}
+.about-content .heading:hover{
+    transform: scale(1.03);
+    color: var(--text-color);
+    text-shadow: 0 0 5px var(--main-color), 0 0 20px var(--main-color);
+}
+span{
+    color: var(--text-color);
+}
+.about-content .heading:hover span{
+    color: var(--main-color);
 }
 .about-content h2{
     text-align: left;
