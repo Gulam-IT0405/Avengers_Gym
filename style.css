@@ -585,7 +585,7 @@ span{
         width: 40vw;
     }
     .home-img::before {
-        font-size: 16rem;
+        font-size: 20rem;
     }
     .heading{
         font-size: 5rem;
@@ -604,7 +604,8 @@ span{
     }
     /* About Section */
     .about-img{
-        width: 40vw;
+        width: 40rem;
+        margin-top: 5rem;
     }
 }
 @media (max-width: 991px){
@@ -676,7 +677,7 @@ span{
         position: static;
     }
     .home-img::before {
-        font-size: 12rem;
+        font-size: 18rem;
     }
     .heading{
         font-size: 4.5rem;
@@ -712,7 +713,8 @@ span{
         padding: 3rem;
     }
     .about-img img{
-        width: 80%;
+        width: 35rem;
+        margin-top: 5rem;
     }
     .about-content h2{
         text-align: center;
@@ -806,26 +808,18 @@ span{
         font-size: 1.6rem;
     }
     .box a{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     /* About Section */
     .about-img img{
-        width: 60vw;
+        width: 30rem;
+        margin-top: 5rem;
     }
     .about-content h2{
         font-size: 4rem;
     }
     .about-content p{
         font-size: 2rem;
-    }
-    .services h2{
-        margin-bottom: 3rem;
-    }
-    .join-us h2 {
-      font-size: 30px;
-    }
-    .registration-form {
-      width: 90%;
     }
 }
 @media (max-width:617px){
@@ -878,10 +872,10 @@ span{
         left: 50%;
         transform: translateX(-50%);
     }
+    /* Services Section */
     .heading{
         font-size: 4.5rem;
     }
-    /* Services Section */
     .services-content{
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         gap: 1rem;
@@ -912,11 +906,12 @@ span{
         font-size: 2rem;
     }
     .box a{
-        font-size: 1.8rem;
+        font-size: 2.3rem;
     }
     /* About Section */
     .about-img img{
-        width: 75vw;
+        width: 30rem;
+        margin-top: 4rem;
     }
     .about-content h2{
         font-size: 4rem;
@@ -964,14 +959,11 @@ span{
         max-width: 220px;
     }
     .home-img::before {
-        font-size: 6rem;
+        font-size: 12rem;
     }
     /* Services Section */
     .services {
         padding: 15px 2%;
-    }
-    .heading {
-        font-size: 3.5rem;
     }
     .services-content {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -1004,7 +996,8 @@ span{
         padding: 2rem;
     }
     .about-img img{
-        width: 90vw;
+        width: 28rem;
+        margin-top: 4rem;
     }
     .about-content h2{
         font-size: 3.5rem;
