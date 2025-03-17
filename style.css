@@ -17,6 +17,7 @@
 }
 :root{
     --bg-color : linear-gradient(135deg, #000, #0d7377);
+    --bg-color2 : linear-gradient(135deg, #0d7377, #000);
     --secondary-bg-color : #111;
     --text-color : #fff;
     --main-color : #45ffca;
@@ -367,17 +368,17 @@ span{
 }
 /* Contact Us Section */
 .contact {
-    background: linear-gradient(135deg, #0d7377, #000); /* Gradient Background */
+    background: var(--bg-color2); /* Gradient Background */
     padding: 12rem 12%;
-    color: #ffffff; /* Text Color */
+    color: var(--text-color); /* Text Color */
     text-align: center;
 }
 .contact-content{
     padding: 20px 20px 30px 20px;
-    height: 48rem;
+    height: auto;
+    max-width: 900px;
+    margin: auto;
     background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     border-radius: 28px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 10px rgba(50, 224, 196, 0.3);
@@ -411,13 +412,14 @@ span{
     font-size: 2.5rem;
 }
 .contact-info a{
-    color: #32e0c4;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 .contact-info a:hover{
-    color: #14b8a6;
+    color: var(--main-color);
+    text-shadow: 0 0 1px var(--main-color), 0 0 10px var(--main-color);
 }
 .contact-buttons {
     margin-top: 2rem;
@@ -585,7 +587,7 @@ span{
         width: 40vw;
     }
     .home-img::before {
-        font-size: 20rem;
+        font-size: 16rem;
     }
     .heading{
         font-size: 5rem;
@@ -606,6 +608,31 @@ span{
     .about-img{
         width: 40rem;
         margin-top: 5rem;
+    }
+    /*Contact Us Section*/
+    .contact {
+        padding: 10rem 10%;
+    }
+    .contact-content {
+        max-width: 850px;
+    }
+    .contact-info {
+        font-size: 3.5rem;
+        line-height: 5rem;
+    }
+    .contact-btn {
+        font-size: 2px;
+        padding: 1rem 1.5rem;
+    }
+    /* Footer Section */
+    .footer .social a{
+        width: 3rem;
+        height: 3rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .footer .copyright{
+        font-size: 2.5rem;
     }
 }
 @media (max-width: 991px){
@@ -677,7 +704,7 @@ span{
         position: static;
     }
     .home-img::before {
-        font-size: 18rem;
+        font-size: 12rem;
     }
     .heading{
         font-size: 4.5rem;
@@ -723,13 +750,34 @@ span{
     .about-content p{
         font-size: 2rem;
     }
-    .contact-content{
-        margin-top: 2rem;
-        text-align: center;
-        font-size: 5rem;
+    /*Contact Us Section*/
+    .contact {
+        padding: 8rem 8%;
     }
+    .contact-content {
+        max-width: 700px;
+    }
+    .contact-info {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+    .contact-btn {
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+    }
+    /* Footer Section */
     .footer{
-        padding: 40px 0;
+        padding: 30px 0;
+    }
+    .footer .social a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        margin: 0 1rem;
+    }
+    .footer .copyright {
+        font-size: 2.5rem;
     }
 }
 @media (max-width: 786px){
@@ -821,6 +869,43 @@ span{
     .about-content p{
         font-size: 2rem;
     }
+    /*Contact Us Section*/
+    .contact {
+        padding: 8rem 5%;
+    }
+    .contact-content {
+        padding: 15px;
+        max-width: 90%;
+    }
+    .contact-info {
+        font-size: 3rem;
+        line-height: 2.2rem;
+    }
+    .contact-info i {
+        font-size: 3rem;
+    }
+    .contact-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+     /* Footer Section */
+     .footer{
+        padding: 30px 0;
+    }
+    .footer .social a {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin: 0 1rem;
+    }
+    .footer .copyright {
+        font-size: 2rem;
+    }
+
 }
 @media (max-width:617px){
     /* Navigation Bar */
@@ -919,6 +1004,42 @@ span{
     .about-content p{
         font-size: 2rem;
     }
+    /*Contact Us Section*/
+    .contact {
+        padding: 10rem 5%;
+    }
+    .contact-content {
+        width: 95%;
+        padding: 15px;
+    }
+    .contact-info {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .contact-info i {
+        font-size: 2.5rem;
+    }
+    .contact-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        padding: 1.5rem;
+    }
+     /* Footer Section */
+     .footer{
+        padding: 30px 0;
+    }
+    .footer .social a {
+        width: 2rem;
+        height: 2rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin: 0 0.8rem;
+    }
+    .footer .copyright {
+        font-size: 1.5rem;
+    }
 }
 @media (max-width:480px){
     /* Navigation Bar */
@@ -959,7 +1080,7 @@ span{
         max-width: 220px;
     }
     .home-img::before {
-        font-size: 12rem;
+        font-size: 6rem;
     }
     /* Services Section */
     .services {
@@ -1004,5 +1125,30 @@ span{
     }
     .about-content p{
         font-size: 1.5rem;
+    }
+    /*Contact Us Section*/
+    .contact-info {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .contact-info i {
+        font-size: 2rem;
+    }
+    .contact-btn {
+        font-size: 1.5rem;
+    }
+     /* Footer Section */
+     .footer{
+        padding: 30px 0;
+    }
+    .footer .social a {
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin: 0 0.5rem;
+    }
+    .footer .copyright {
+        font-size: 1rem;
     }
 }
