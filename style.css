@@ -1146,6 +1146,7 @@ span{
 }
 .back{
     font-size: 2rem;
+    padding: 1rem;
     color: var(--main-color);
     font-weight: 800;
     cursor: pointer;
