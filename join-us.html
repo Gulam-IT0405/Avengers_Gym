@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - Avengers Gym</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="webpage icon" type="png" href="Docs/dumbbell.png">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back"><i class='bx bxs-left-arrow'></i></a>
+    </header>
+    <div class="join-us" id="join-us">
+        <h2 class="heading">Join <span>Us</span></h2>
+        <form id="registration-form" action="index.html">
+            <div class="registration-content">   
+                <div class="form-group">
+                    <label for="name">Name :</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Username :</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password :</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Register As :</label>
+                    <div class="radio-group">
+                        <input type="radio" name="role" value="member" id="member" required> <label for="member">Member</label>
+                        <input type="radio" name="role" value="trainer" id="trainer"> <label for="trainer">Trainer</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div id="membership-choice" class="hidden">
+                        <label>Choose Your Plan :</label>
+                        <div class="radio-group">
+                            <input type="radio" id="trial" name="plan" value="trial" required>
+                            <label for="trial">Trial</label>
+                
+                            <input type="radio" id="membership" name="plan" value="membership">
+                            <label for="membership">Membership</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div id="member-options" class="hidden">
+                        <label>Membership Type :</label>
+                        <div class="radio-group">
+                            <input type="radio" id="basic" name="membership" value="basic" required>
+                            <label for="basic">Basic</label>
+                        
+                            <input type="radio" id="pro" name="membership" value="pro">
+                            <label for="pro">Pro</label>
+                        
+                            <input type="radio" id="premium" name="membership" value="premium">
+                            <label for="premium">Premium</label>
+                        </div>
+                        
+
+                        <label>Membership Duration :</label>
+                        <div class="radio-group">
+                            <input type="radio" id="monthly" name="duration" value="Monthly" required>
+                            <label for="monthly">Monthly</label>
+                        
+                            <input type="radio" id="yearly" name="duration" value="Yearly">
+                            <label for="yearly">Yearly</label>
+                        </div>
+                        
+                        <label>Payment Method :</label>
+                        <div class="radio-group">
+                            <input type="radio" id="credit" name="payment" value="credit" required>
+                            <label for="credit">Credit Card</label>
+                        
+                            <input type="radio" id="debit" name="payment" value="debit">
+                            <label for="debit">Debit Card</label>
+                        
+                            <input type="radio" id="upi" name="payment" value="upi">
+                            <label for="upi">UPI</label>
+
+                            <input type="radio" id="cash" name="payment" value="cash">
+                            <label for="cash">Cash</label>
+                        </div>
+                        <p id="selected-plan-price">Select A Plan And Duration To See The Price.</p>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div id="trainer-options" class="hidden">
+                        <label for="experience">Years of Experience:</label>
+                        <input type="number" id="experience" name="experience" min="0" required>
+
+                        <label for="salary">Expected Salary:</label>
+                        <input type="text" id="salary" name="salary" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Register</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <footer class="footer">
+        <p class="copyright">
+            &copy; AVENGERS GYM 2025 - All Rights Reserved
+        </p>
+
+        <div class="author">
+                The Creation Of : <br> <a href="https://www.instagram.com/memon_gulam_98?igsh=MTk5dDZtdWhuaDZieA==">@memon_gulam_98</a>
+                                    <br> <a href="mailto:memon.g.h.m98@gmail.com">memon.g.h.m98@gmail.com</a>
+        </div>
+     </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
